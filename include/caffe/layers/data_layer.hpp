@@ -12,7 +12,7 @@
 #include "caffe/util/db.hpp"
 
 namespace caffe {
-
+// 网络底层,主要实现数据格式转换
 template <typename Dtype>
 class DataLayer : public BasePrefetchingDataLayer<Dtype> {
  public:
