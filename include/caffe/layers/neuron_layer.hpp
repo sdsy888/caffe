@@ -18,6 +18,8 @@ namespace caffe {
 template <typename Dtype>
 class NeuronLayer : public Layer<Dtype> {
  public:
+  //  NeuronLayer的派生类主要是元素级别的运算(Dropout/Relu/Sigmoid等)
+  // 同址运算,in-place computation,结果覆盖原值且占用新内存
   explicit NeuronLayer(const LayerParameter& param)
      : Layer<Dtype>(param) {}
   virtual void Reshape(const vector<Blob<Dtype>*>& bottom,
