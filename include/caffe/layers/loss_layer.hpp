@@ -22,6 +22,7 @@ const float kLOG_THRESHOLD = 1e-20;
 template <typename Dtype>
 class LossLayer : public Layer<Dtype> {
  public:
+  //  该派生类会产生loss,且只有该层(类)可以产生loss
   explicit LossLayer(const LayerParameter& param)
      : Layer<Dtype>(param) {}
   virtual void LayerSetUp(
