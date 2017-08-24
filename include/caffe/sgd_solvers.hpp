@@ -53,7 +53,7 @@ class NesterovSolver : public SGDSolver<Dtype> {
   explicit NesterovSolver(const string& param_file)
       : SGDSolver<Dtype>(param_file) {}
   virtual inline const char* type() const { return "Nesterov"; }
-
+// 实现计算update参数的功能
  protected:
   virtual void ComputeUpdateValue(int param_id, Dtype rate);
 

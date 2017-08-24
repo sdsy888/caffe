@@ -20,6 +20,8 @@ namespace caffe {
  *
  * TODO(dox): more thorough description.
  */
+ // 使用容器将多个Layer有序地存放;对各个Layer进行初始化以及提供更新网络参数的Update()接口
+ // 其中的Forward和Backward函数可以计算整个网路的前向和后向传导loss
 template <typename Dtype>
 class Net {
  public:

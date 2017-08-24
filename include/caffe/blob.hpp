@@ -20,6 +20,7 @@ namespace caffe {
  *
  * TODO(dox): more thorough description.
  */
+ // data_指向实际存储数据的内存或显存
 template <typename Dtype>
 class Blob {
  public:

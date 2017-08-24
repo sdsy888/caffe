@@ -38,6 +38,7 @@ typedef boost::function<SolverAction::Enum()> ActionCallback;
  * Requires implementation of ApplyUpdate to compute a parameter update
  * given the current state of the Net parameters.
  */
+ // 包含Net指针,实现训练模型的优化算法,对整个进行训练
 template <typename Dtype>
 class Solver {
  public:
